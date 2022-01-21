@@ -1,0 +1,62 @@
+$soft_blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$main_bg: hsl(217, 54%, 11%);
+$card_bg: hsl(216, 50%, 16%);
+$line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+body {
+    background-color: $main_bg;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 10px;
+    background-color: $card_bg;
+    width: 50%;
+    height: 90%;
+
+    :nth-child(0){
+        flex-grow: 1;
+    }
+    :nth-child(1){
+        flex-grow: 0;
+    }
+    :nth-child(2){
+        flex-grow: 0;
+    }
+    :nth-child(3){
+        flex-grow: 0;
+    }
+
+    footer {
+        flex-grow: 0;
+        border-top: $line solid 1px;
+    }
+}
+
+
+.info ul{
+    padding: 0;
+    display: flex;
+}
+
+.info ul li{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    list-style: none;
+}
+
+.info ul li:nth-last-child(1){
+    justify-content: flex-end;
+}
+
+
