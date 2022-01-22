@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap");
 body {
+  font-family: outfit;
   background-color: #0d192b;
   margin: 0;
   padding: 0;
@@ -18,39 +20,69 @@ body {
           justify-content: center;
   padding: 10px;
   background-color: #14253d;
-  width: 50%;
+  width: 320px;
   height: 90%;
+  border-radius: 10px;
 }
 
-.main :nth-child(0) {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.main #nftMain {
+  margin: 10px;
 }
 
-.main :nth-child(1) {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+.main #nftMain :hover {
+  background-color: #00fff7;
+  opacity: 50%;
 }
 
-.main :nth-child(2) {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+.main #description {
+  margin: 10px;
+  color: #8bacda;
 }
 
-.main :nth-child(3) {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+.main h2 {
+  margin: 10px;
+  color: #fff;
+}
+
+.main .info {
+  margin: 10px;
 }
 
 .main footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
   border-top: #2f415b solid 1px;
+  padding: 10px;
+}
+
+.main footer #avatar {
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.main footer #copyright {
+  margin: 0;
+  padding: 10px 20px;
+  color: #8bacda;
+  word-spacing: 2px;
+}
+
+.main footer #copyright :hover {
+  color: #00fff7;
+}
+
+.main footer #copyright a {
+  color: white;
+  word-spacing: 0px;
+  text-decoration: none;
 }
 
 .info ul {
@@ -58,24 +90,34 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 30px;
+  margin: 0;
 }
 
 .info ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
+  color: #8bacda;
 }
 
-.info ul li:nth-last-child(1) {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+.info ul li :nth-child(1) {
+  margin: 0px;
+}
+
+.info ul li #price {
+  padding: 7px;
+  color: #00fff7;
+}
+
+.info ul li #date {
+  padding: 7px;
 }
 /*# sourceMappingURL=style.css.map */

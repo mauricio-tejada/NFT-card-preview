@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
+
 $soft_blue: hsl(215, 51%, 70%);
 $cyan: hsl(178, 100%, 50%);
 $main_bg: hsl(217, 54%, 11%);
@@ -6,6 +8,7 @@ $line: hsl(215, 32%, 27%);
 $white: hsl(0, 0%, 100%);
 
 body {
+    font-family: outfit;
     background-color: $main_bg;
     margin: 0;
     padding: 0;
@@ -20,25 +23,63 @@ body {
 
     padding: 10px;
     background-color: $card_bg;
-    width: 50%;
+    width: 320px;
     height: 90%;
+    border-radius: 10px;
 
-    :nth-child(0){
-        flex-grow: 1;
+    #nftMain {
+        margin: 10px;
+
+        :hover {
+            background-color: $cyan;
+            opacity: 50%;
+        }
     }
-    :nth-child(1){
-        flex-grow: 0;
+
+    #description {
+        margin: 10px;
+        color: $soft_blue;
     }
-    :nth-child(2){
-        flex-grow: 0;
-    }
-    :nth-child(3){
-        flex-grow: 0;
-    }
+
+   h2 {
+       margin: 10px;
+       color: #fff;
+   }
+
+   .info {
+       margin: 10px;
+   }
 
     footer {
+        display: flex;
         flex-grow: 0;
         border-top: $line solid 1px;
+        padding: 10px;
+
+        #avatar {
+            height: 40px;
+            border: 1px solid $white;
+            border-radius: 50%;
+            align-self: center;
+        }
+
+        #copyright {
+            margin: 0;
+            padding: 10px 20px;
+            color: $soft_blue;
+            word-spacing: 2px;
+
+            :hover{
+                color: $cyan;
+            }
+
+            a {
+                color: $white;
+                word-spacing: 0px;
+                text-decoration: none;
+
+            }
+        }
     }
 }
 
@@ -46,17 +87,33 @@ body {
 .info ul{
     padding: 0;
     display: flex;
+    justify-content: space-between;
+    height: 30px;
+    margin: 0;
+    
 }
 
 .info ul li{
     display: flex;
-    flex-grow: 1;
     align-items: center;
     list-style: none;
+    color: $soft_blue;
+    
+    :nth-child(1){
+        margin: 0px;
+    }
+    
+    #price {
+        padding: 7px;
+        color: $cyan;
+    }
+
+    #date {
+        padding: 7px;
+    }
+
 }
 
-.info ul li:nth-last-child(1){
-    justify-content: flex-end;
-}
+
 
 
