@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-(./images/Screenshot-main.jpg)
+![Final design](./images/Screenshot-main.jpg)
 
 ### Links
 
